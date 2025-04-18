@@ -1,0 +1,93 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
+
+export default function MaxicanoWebsite() {
+  return (
+    <div className="min-h-screen bg-[#1E1E1E] text-white p-6">
+      <header className="text-center py-10">
+        <h1 className="text-5xl font-bold text-[#00FF85]">Maxicano</h1>
+        <p className="text-xl mt-2">Authentic Tacos & Mexican Vibes in Kreuzberg, Berlin</p>
+      </header>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <Card className="bg-black">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold text-[#00FF85] mb-2">Über uns</h2>
+            <p>
+              Willkommen bei Maxicano – dem Tacoladen im Herzen von Kreuzberg! Unsere
+              Tacos werden mit frischen Zutaten, handgemachten Tortillas und einer
+              Prise Berlin-Charme serviert.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-black">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold text-[#00FF85] mb-2">Speisekarte</h2>
+            <ul className="list-disc list-inside">
+              <li>Classic Tacos mit Rind, Huhn oder vegetarisch</li>
+              <li>Guacamole & Nachos</li>
+              <li>Quesadillas und Burritos</li>
+              <li>Hausgemachte Limonaden und Mezcal-Drinks</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="my-10">
+        <h2 className="text-3xl font-bold text-[#00FF85] text-center mb-6">Frische Zutaten kaufen</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card className="bg-black">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-[#00FF85]">Hausgemachte Tortillas</h3>
+              <p>12 Stück, frisch gebacken – perfekt für deine eigenen Tacos.</p>
+              <Button className="mt-4 bg-[#00FF85] text-black hover:bg-[#00e673]">Jetzt kaufen</Button>
+            </CardContent>
+          </Card>
+          <Card className="bg-black">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-[#00FF85]">Guacamole Kit</h3>
+              <p>Mit reifen Avocados, Limetten, Koriander & Gewürzen.</p>
+              <Button className="mt-4 bg-[#00FF85] text-black hover:bg-[#00e673]">Jetzt kaufen</Button>
+            </CardContent>
+          </Card>
+          <Card className="bg-black">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-[#00FF85]">Salsa Roja</h3>
+              <p>Unsere feurige Tomaten-Salsa im Glas – original Maxicano Rezept.</p>
+              <Button className="mt-4 bg-[#00FF85] text-black hover:bg-[#00e673]">Jetzt kaufen</Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-[#00FF85] text-center mb-4">Die Maxicano Box – Mit Max nach Mexico</h3>
+          <Card className="bg-black max-w-xl mx-auto">
+            <CardContent className="p-6">
+              <p className="mb-4">
+                Unsere beliebteste Box mit allem, was du für einen Taco-Abend zuhause brauchst: 12 frische Tortillas,
+                ein Guacamole Kit und ein Glas Salsa Roja. Hol dir den authentischen Geschmack Mexikos direkt nach Hause!
+              </p>
+              <Button className="bg-[#00FF85] text-black hover:bg-[#00e673]">Maxicano Box kaufen</Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="my-10 text-center">
+        <h2 className="text-3xl font-bold text-[#00FF85] mb-4">Besuch uns in Kreuzberg!</h2>
+        <p>Adresse: Oranienstraße 123, 10999 Berlin</p>
+        <p>Öffnungszeiten: Mo–Sa 12:00–22:00 Uhr</p>
+        <Button className="mt-4 bg-[#00FF85] text-black hover:bg-[#00e673]">
+          <Sparkles className="mr-2" /> Jetzt reservieren
+        </Button>
+      </section>
+
+      <footer className="text-center mt-10 text-sm text-gray-400">
+        © 2025 Maxicano – Tacos mit Herz und Feuer.
+      </footer>
+    </div>
+  );
+}
